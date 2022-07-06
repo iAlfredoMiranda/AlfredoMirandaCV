@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <!--Start TAG MATA-->
+    <!-- Start TAG MATA-->
 
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html" />
@@ -15,7 +15,7 @@
 
     <!--End TAG MATA-->
 
-    <!--Start BOOTSTRAP-5 CSS -->
+    <!-- Start BOOTSTRAP-5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--End BOOTSTRAP-5 JS -->
     
@@ -23,23 +23,29 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- End Font Awesome -->
     
-    <!--Start Original CSS
-    link rel="stylesheet" type="text/css" href="css/main.css"
-    End Original CSS -->
+    <!-- Start Original CSS -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/hero.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <!-- End Original CSS -->
 
     <title>Alfredo Miranda - Front-End - Curriculum</title>
 
-    <!--Start FAVEICON-->
-
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Start FAVEICON-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="60x60" href="himg/favicon.ico">
-
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon.ico">
     <!--End FAVEICON-->    
+    
+    <!-- Start Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- End Font-->
 </head>
 <body>
     <header> <!--Start Header NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Alfredo Miranda</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,12 +73,15 @@
             </div>
           </nav>
     </header> <!--End Header NAVBAR -->
-    <main class="container-fluid">
-    <section class="container align-self-center"><!--StartHero-->
+    <main class="container-fluid" id="main">
+    <section id="hero" class="container align-self-center"><!--StartHero-->
       <div class="row">
         <div class="col-md-12">
+          <div class="header-photo">
+            <img src="img/avatar-formal-180.png" alt="Alfredo Miranda">
+          </div>
           <h1>Alfredo Miranda</h1>
-          <h2>Front-End</h2>
+          <h2>Svillupatore Front-End</h2>
           <div class="social-links">
             <ul>
               <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
@@ -80,53 +89,55 @@
               <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
             </ul>
           </div>
-          <div class="cv-btn">
-            <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+          <div>
+            <a href="#" target="_blank" class="btn cv-btn btn-danger">Download CV</a>
           </div>
         </div>
       </div>
     </section><!--End Hero -->
-    <section class="container"> <!--Start info CV-->
+    <section class="container" id="info-cv"> <!--Start info CV-->
       <div class="row">
         <div class="col">
             <section class="row"><!-- Start About Me -->
               <div class="container">
-                <h2>Chi sono Io</h2>
+                <div class="page-title">
+                <h2>Chi sono <span>Io</span></h2>
+                </div>
                 <div class="row"> <!-- Start Chi sono Io -->
                   <div class="col-xs-12 col-sm-7">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia similique temporibus sint ratione esse, possimus nam corporis aut id obcaecati sapiente, a, suscipit iure quaerat? Accusantium provident eos rem enim!</p>
+                    <p>Ho 25 anni, sono un Sviluppatore Web, specialista in Front-End e Web Design da 4 anni, laureato in Analisi e Sviluppo dei Sistemi equivalente all'informatica. Lavorato con HTML, CSS, JavaScript, frameworks come Angular, React, Bootstrap e SCSS/SASS (preprocessore CSS) per Front-End, anche già lavorato con PHP, MySQL e PostgreSQL per Back-End e ora sto a studiare GoLang come segundo linguagio di programmazione. Sto cercando una opportunità di lavoro in Italia perché ho sempre sognato vivere in Italia, anche ho una zia che vive in Sicilia e me incoraggia anche vivere in Italia con la mia moglie e bambi. Io studio italiano a casa da solo e credo essere capace di lavorare con una squad italiana sia in presenza che in remoto.</p>
                   </div>
                   <div class="col-xs-12 col-sm-5">
                     <div class="info-list">
                       <ul>
                         <li>
-                          <span class="title">età</span>
+                          <span class="title">Età:</span>
                           <span class="value">26</span>
                         </li>
 
                         <li>
-                          <span class="title">Residenza</span>
+                          <span class="title">Residenza:</span>
                           <span class="value">Franca - SP - Brasile</span>
                         </li>
 
                         <li>
-                          <span class="title">e-mail</span>
+                          <span class="title">E-mail:</span>
                           <span class="value"><a>alfredo.s.miranda@hotmail.com</a></span>
                         </li>
 
                         <li>
-                          <span class="title">Cellulare</span>
+                          <span class="title">Cellulare:</span>
                           <span class="value">+55 16 99356-2243</span>
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div> <!-- End Chi sono Io -->
-                <div class="container"> <!-- Start Services -->
+                <div> <!-- Start Services -->
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
                       <div class="block-title">
-                        <h3>Le mie abilità</h3>
+                        <h3>Le <span>mie abilità</span></h3>
                       </div>
                     </div>
                   </div>
@@ -185,7 +196,9 @@
             </section><!-- End About Me -->
             <section class="row"><!-- Start CV -->
               <div>
-                <h2>Curriculum</h2>
+                <div class="page-title">
+                  <h2>Curriculum</h2>
+                </div>
                 <div class="row">
                   <div class="col-xs-12 col-sm-7"> <!-- Start Education-->
                       <h3>Education</h3>
